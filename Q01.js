@@ -1,14 +1,5 @@
 let reverseNumber = (num) => {
-  let sum;
-  const arry = num.split("").reverse()
-  arry.forEach((value,index) => {
-    if(index == 0){
-      sum = value;
-    }else{
-      sum += value;
-    }
-  });
-  return sum;
+  return num.split("").reverse().join('')
 };
 
 let num = 11;
